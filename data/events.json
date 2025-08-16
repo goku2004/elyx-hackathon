@@ -1,0 +1,965 @@
+[
+  {
+    "id": "event-e1599cc6",
+    "start_ts": "2025-01-01T09:00:00",
+    "end_ts": "2025-01-08T09:00:00",
+    "event_type": "travel_week",
+    "initiator": "member",
+    "metadata": {
+      "note": "member traveling; timezone shift likely"
+    }
+  },
+  {
+    "id": "event-32498b36",
+    "start_ts": "2025-01-01T18:00:00",
+    "event_type": "diagnostic_panel",
+    "initiator": "lab_system",
+    "metadata": {
+      "panel": "full_blood_panel"
+    }
+  },
+  {
+    "id": "event-7857c991",
+    "start_ts": "2025-01-02T18:00:00",
+    "event_type": "exercise_update",
+    "initiator": "ruby",
+    "metadata": {
+      "details": "biweekly exercise plan update"
+    }
+  },
+  {
+    "id": "event-18619ee7",
+    "start_ts": "2025-01-03T22:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition"
+    }
+  },
+  {
+    "id": "event-159b5415",
+    "start_ts": "2025-01-03T23:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom"
+    }
+  },
+  {
+    "id": "event-212a59a5",
+    "start_ts": "2025-01-04T23:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition"
+    }
+  },
+  {
+    "id": "event-c0d3888f",
+    "start_ts": "2025-01-06T20:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "travel logistics"
+    }
+  },
+  {
+    "id": "event-b74ae523",
+    "start_ts": "2025-01-11T20:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "sleep"
+    }
+  },
+  {
+    "id": "event-697a0f71",
+    "start_ts": "2025-01-12T01:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom"
+    }
+  },
+  {
+    "id": "event-6e0a44c1",
+    "start_ts": "2025-01-16T18:00:00",
+    "event_type": "exercise_update",
+    "initiator": "ruby",
+    "metadata": {
+      "details": "biweekly exercise plan update"
+    }
+  },
+  {
+    "id": "event-d9a0ecac",
+    "start_ts": "2025-01-17T03:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise"
+    }
+  },
+  {
+    "id": "event-7a2dbc06",
+    "start_ts": "2025-01-22T05:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition"
+    }
+  },
+  {
+    "id": "event-0b788229",
+    "start_ts": "2025-01-22T22:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "travel logistics"
+    }
+  },
+  {
+    "id": "event-d4ab1ed6",
+    "start_ts": "2025-01-23T01:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom"
+    }
+  },
+  {
+    "id": "event-6c861c52",
+    "start_ts": "2025-01-26T00:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise"
+    }
+  },
+  {
+    "id": "event-3b1d9478",
+    "start_ts": "2025-01-27T17:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "travel logistics"
+    }
+  },
+  {
+    "id": "event-2e071ede",
+    "start_ts": "2025-01-29T09:00:00",
+    "end_ts": "2025-02-05T09:00:00",
+    "event_type": "travel_week",
+    "initiator": "member",
+    "metadata": {
+      "note": "member traveling; timezone shift likely"
+    }
+  },
+  {
+    "id": "event-3e341a04",
+    "start_ts": "2025-01-30T18:00:00",
+    "event_type": "exercise_update",
+    "initiator": "ruby",
+    "metadata": {
+      "details": "biweekly exercise plan update"
+    }
+  },
+  {
+    "id": "event-bb7b252a",
+    "start_ts": "2025-02-01T22:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise"
+    }
+  },
+  {
+    "id": "event-8932fab1",
+    "start_ts": "2025-02-10T16:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise"
+    }
+  },
+  {
+    "id": "event-1cc97068",
+    "start_ts": "2025-02-13T18:00:00",
+    "event_type": "exercise_update",
+    "initiator": "ruby",
+    "metadata": {
+      "details": "biweekly exercise plan update"
+    }
+  },
+  {
+    "id": "event-d85c38c4",
+    "start_ts": "2025-02-18T01:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise"
+    }
+  },
+  {
+    "id": "event-8c7ae979",
+    "start_ts": "2025-02-18T04:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "travel logistics"
+    }
+  },
+  {
+    "id": "event-ef3e9b3b",
+    "start_ts": "2025-02-21T00:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise"
+    }
+  },
+  {
+    "id": "event-c3318855",
+    "start_ts": "2025-02-23T03:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom"
+    }
+  },
+  {
+    "id": "event-5e2ff3ab",
+    "start_ts": "2025-02-23T17:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom"
+    }
+  },
+  {
+    "id": "event-ed179511",
+    "start_ts": "2025-02-24T23:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom"
+    }
+  },
+  {
+    "id": "event-c17c2b0d",
+    "start_ts": "2025-02-26T03:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "sleep"
+    }
+  },
+  {
+    "id": "event-2550c3c1",
+    "start_ts": "2025-02-26T09:00:00",
+    "end_ts": "2025-03-05T09:00:00",
+    "event_type": "travel_week",
+    "initiator": "member",
+    "metadata": {
+      "note": "member traveling; timezone shift likely"
+    }
+  },
+  {
+    "id": "event-2d317961",
+    "start_ts": "2025-02-27T18:00:00",
+    "event_type": "exercise_update",
+    "initiator": "ruby",
+    "metadata": {
+      "details": "biweekly exercise plan update"
+    }
+  },
+  {
+    "id": "event-82cead3a",
+    "start_ts": "2025-03-01T23:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition"
+    }
+  },
+  {
+    "id": "event-60586fd4",
+    "start_ts": "2025-03-05T00:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "sleep"
+    }
+  },
+  {
+    "id": "event-0ee88c47",
+    "start_ts": "2025-03-06T03:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "sleep"
+    }
+  },
+  {
+    "id": "event-c7dbc4d0",
+    "start_ts": "2025-03-06T22:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "travel logistics"
+    }
+  },
+  {
+    "id": "event-403a64a0",
+    "start_ts": "2025-03-08T17:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "sleep"
+    }
+  },
+  {
+    "id": "event-03a7272a",
+    "start_ts": "2025-03-13T18:00:00",
+    "event_type": "exercise_update",
+    "initiator": "ruby",
+    "metadata": {
+      "details": "biweekly exercise plan update"
+    }
+  },
+  {
+    "id": "event-ad0789a5",
+    "start_ts": "2025-03-22T03:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition"
+    }
+  },
+  {
+    "id": "event-31efd959",
+    "start_ts": "2025-03-26T09:00:00",
+    "end_ts": "2025-04-02T09:00:00",
+    "event_type": "travel_week",
+    "initiator": "member",
+    "metadata": {
+      "note": "member traveling; timezone shift likely"
+    }
+  },
+  {
+    "id": "event-80823f97",
+    "start_ts": "2025-03-27T06:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "travel logistics"
+    }
+  },
+  {
+    "id": "event-772c2ef4",
+    "start_ts": "2025-03-27T18:00:00",
+    "event_type": "exercise_update",
+    "initiator": "ruby",
+    "metadata": {
+      "details": "biweekly exercise plan update"
+    }
+  },
+  {
+    "id": "event-0aed8988",
+    "start_ts": "2025-03-28T03:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom"
+    }
+  },
+  {
+    "id": "event-81756554",
+    "start_ts": "2025-03-29T06:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "sleep"
+    }
+  },
+  {
+    "id": "event-cb629c9c",
+    "start_ts": "2025-03-30T04:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise"
+    }
+  },
+  {
+    "id": "event-a2c778ce",
+    "start_ts": "2025-03-31T22:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition"
+    }
+  },
+  {
+    "id": "event-d94bf542",
+    "start_ts": "2025-04-01T18:00:00",
+    "event_type": "diagnostic_panel",
+    "initiator": "lab_system",
+    "metadata": {
+      "panel": "full_blood_panel"
+    }
+  },
+  {
+    "id": "event-186de4e5",
+    "start_ts": "2025-04-05T04:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise"
+    }
+  },
+  {
+    "id": "event-44b2353b",
+    "start_ts": "2025-04-06T22:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition"
+    }
+  },
+  {
+    "id": "event-1ed4831f",
+    "start_ts": "2025-04-09T22:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "sleep"
+    }
+  },
+  {
+    "id": "event-622ed1f2",
+    "start_ts": "2025-04-10T18:00:00",
+    "event_type": "exercise_update",
+    "initiator": "ruby",
+    "metadata": {
+      "details": "biweekly exercise plan update"
+    }
+  },
+  {
+    "id": "event-a5f9f4ab",
+    "start_ts": "2025-04-10T22:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise"
+    }
+  },
+  {
+    "id": "event-6fbb7c86",
+    "start_ts": "2025-04-12T19:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition"
+    }
+  },
+  {
+    "id": "event-5373bd80",
+    "start_ts": "2025-04-13T03:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise"
+    }
+  },
+  {
+    "id": "event-14c2c065",
+    "start_ts": "2025-04-21T00:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition"
+    }
+  },
+  {
+    "id": "event-3a291410",
+    "start_ts": "2025-04-22T21:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition"
+    }
+  },
+  {
+    "id": "event-6326f641",
+    "start_ts": "2025-04-23T09:00:00",
+    "end_ts": "2025-04-30T09:00:00",
+    "event_type": "travel_week",
+    "initiator": "member",
+    "metadata": {
+      "note": "member traveling; timezone shift likely"
+    }
+  },
+  {
+    "id": "event-46e29be4",
+    "start_ts": "2025-04-24T18:00:00",
+    "event_type": "exercise_update",
+    "initiator": "ruby",
+    "metadata": {
+      "details": "biweekly exercise plan update"
+    }
+  },
+  {
+    "id": "event-edd70424",
+    "start_ts": "2025-04-26T01:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise"
+    }
+  },
+  {
+    "id": "event-b3591ea7",
+    "start_ts": "2025-04-30T19:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "sleep"
+    }
+  },
+  {
+    "id": "event-8606c876",
+    "start_ts": "2025-05-08T18:00:00",
+    "event_type": "exercise_update",
+    "initiator": "ruby",
+    "metadata": {
+      "details": "biweekly exercise plan update"
+    }
+  },
+  {
+    "id": "event-9ecc6ed6",
+    "start_ts": "2025-05-20T17:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition"
+    }
+  },
+  {
+    "id": "event-25a159d3",
+    "start_ts": "2025-05-21T09:00:00",
+    "end_ts": "2025-05-28T09:00:00",
+    "event_type": "travel_week",
+    "initiator": "member",
+    "metadata": {
+      "note": "member traveling; timezone shift likely"
+    }
+  },
+  {
+    "id": "event-56970ab2",
+    "start_ts": "2025-05-22T02:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "sleep"
+    }
+  },
+  {
+    "id": "event-8a2f2479",
+    "start_ts": "2025-05-22T18:00:00",
+    "event_type": "exercise_update",
+    "initiator": "ruby",
+    "metadata": {
+      "details": "biweekly exercise plan update"
+    }
+  },
+  {
+    "id": "event-3fe38ca4",
+    "start_ts": "2025-05-28T16:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition"
+    }
+  },
+  {
+    "id": "event-34756cfd",
+    "start_ts": "2025-06-02T17:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom"
+    }
+  },
+  {
+    "id": "event-276c04ec",
+    "start_ts": "2025-06-05T06:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom"
+    }
+  },
+  {
+    "id": "event-81932822",
+    "start_ts": "2025-06-05T18:00:00",
+    "event_type": "exercise_update",
+    "initiator": "ruby",
+    "metadata": {
+      "details": "biweekly exercise plan update"
+    }
+  },
+  {
+    "id": "event-4dbace78",
+    "start_ts": "2025-06-06T23:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition"
+    }
+  },
+  {
+    "id": "event-b53a25cc",
+    "start_ts": "2025-06-07T17:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition"
+    }
+  },
+  {
+    "id": "event-783b0088",
+    "start_ts": "2025-06-13T19:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise"
+    }
+  },
+  {
+    "id": "event-92abb2e1",
+    "start_ts": "2025-06-13T21:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom"
+    }
+  },
+  {
+    "id": "event-518bb1e3",
+    "start_ts": "2025-06-18T09:00:00",
+    "end_ts": "2025-06-25T09:00:00",
+    "event_type": "travel_week",
+    "initiator": "member",
+    "metadata": {
+      "note": "member traveling; timezone shift likely"
+    }
+  },
+  {
+    "id": "event-260ee9a4",
+    "start_ts": "2025-06-19T18:00:00",
+    "event_type": "exercise_update",
+    "initiator": "ruby",
+    "metadata": {
+      "details": "biweekly exercise plan update"
+    }
+  },
+  {
+    "id": "event-04864ccd",
+    "start_ts": "2025-06-21T06:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition"
+    }
+  },
+  {
+    "id": "event-61aa6985",
+    "start_ts": "2025-06-25T16:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "travel logistics"
+    }
+  },
+  {
+    "id": "event-c61cccc0",
+    "start_ts": "2025-07-01T18:00:00",
+    "event_type": "diagnostic_panel",
+    "initiator": "lab_system",
+    "metadata": {
+      "panel": "full_blood_panel"
+    }
+  },
+  {
+    "id": "event-4b9d074c",
+    "start_ts": "2025-07-03T18:00:00",
+    "event_type": "exercise_update",
+    "initiator": "ruby",
+    "metadata": {
+      "details": "biweekly exercise plan update"
+    }
+  },
+  {
+    "id": "event-01857c6f",
+    "start_ts": "2025-07-04T00:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise"
+    }
+  },
+  {
+    "id": "event-38791b79",
+    "start_ts": "2025-07-04T22:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise"
+    }
+  },
+  {
+    "id": "event-d699390b",
+    "start_ts": "2025-07-09T05:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "travel logistics"
+    }
+  },
+  {
+    "id": "event-fe01f6cf",
+    "start_ts": "2025-07-11T22:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "sleep"
+    }
+  },
+  {
+    "id": "event-3ec480a0",
+    "start_ts": "2025-07-12T20:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom"
+    }
+  },
+  {
+    "id": "event-8dba5a8e",
+    "start_ts": "2025-07-16T09:00:00",
+    "end_ts": "2025-07-23T09:00:00",
+    "event_type": "travel_week",
+    "initiator": "member",
+    "metadata": {
+      "note": "member traveling; timezone shift likely"
+    }
+  },
+  {
+    "id": "event-1723b0aa",
+    "start_ts": "2025-07-16T23:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise"
+    }
+  },
+  {
+    "id": "event-5d7c22c0",
+    "start_ts": "2025-07-17T18:00:00",
+    "event_type": "exercise_update",
+    "initiator": "ruby",
+    "metadata": {
+      "details": "biweekly exercise plan update"
+    }
+  },
+  {
+    "id": "event-81681a6f",
+    "start_ts": "2025-07-18T16:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise"
+    }
+  },
+  {
+    "id": "event-958b3ef4",
+    "start_ts": "2025-07-21T18:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "sleep"
+    }
+  },
+  {
+    "id": "event-77e5e800",
+    "start_ts": "2025-07-21T23:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise"
+    }
+  },
+  {
+    "id": "event-1156ec82",
+    "start_ts": "2025-07-28T17:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "travel logistics"
+    }
+  },
+  {
+    "id": "event-e87588c6",
+    "start_ts": "2025-07-30T19:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "sleep"
+    }
+  },
+  {
+    "id": "event-a207bed5",
+    "start_ts": "2025-07-31T18:00:00",
+    "event_type": "exercise_update",
+    "initiator": "ruby",
+    "metadata": {
+      "details": "biweekly exercise plan update"
+    }
+  },
+  {
+    "id": "event-22e58790",
+    "start_ts": "2025-08-04T20:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise"
+    }
+  },
+  {
+    "id": "event-a3544ca7",
+    "start_ts": "2025-08-08T21:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition"
+    }
+  },
+  {
+    "id": "event-a0f83386",
+    "start_ts": "2025-08-10T02:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition"
+    }
+  },
+  {
+    "id": "event-9bd92452",
+    "start_ts": "2025-08-11T22:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom"
+    }
+  },
+  {
+    "id": "event-fa4d1ea9",
+    "start_ts": "2025-08-13T09:00:00",
+    "end_ts": "2025-08-20T09:00:00",
+    "event_type": "travel_week",
+    "initiator": "member",
+    "metadata": {
+      "note": "member traveling; timezone shift likely"
+    }
+  },
+  {
+    "id": "event-7c091272",
+    "start_ts": "2025-08-14T18:00:00",
+    "event_type": "exercise_update",
+    "initiator": "ruby",
+    "metadata": {
+      "details": "biweekly exercise plan update"
+    }
+  },
+  {
+    "id": "event-6e780eb7",
+    "start_ts": "2025-08-17T04:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition"
+    }
+  },
+  {
+    "id": "event-641cc2c1",
+    "start_ts": "2025-08-19T16:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom"
+    }
+  },
+  {
+    "id": "event-080026d8",
+    "start_ts": "2025-08-24T03:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom"
+    }
+  },
+  {
+    "id": "event-873bb6e8",
+    "start_ts": "2025-08-25T20:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition"
+    }
+  },
+  {
+    "id": "event-66268d13",
+    "start_ts": "2025-08-28T18:00:00",
+    "event_type": "exercise_update",
+    "initiator": "ruby",
+    "metadata": {
+      "details": "biweekly exercise plan update"
+    }
+  },
+  {
+    "id": "event-111afe7b",
+    "start_ts": "2025-08-29T00:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "travel logistics"
+    }
+  },
+  {
+    "id": "event-1178f7da",
+    "start_ts": "2025-08-30T16:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise"
+    }
+  },
+  {
+    "id": "event-006ecf19",
+    "start_ts": "2025-09-02T16:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition"
+    }
+  },
+  {
+    "id": "event-5ecfc91d",
+    "start_ts": "2025-09-03T04:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom"
+    }
+  }
+]

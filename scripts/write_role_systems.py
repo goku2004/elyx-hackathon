@@ -25,7 +25,7 @@ role_systems = {
   }
 }
 
-out = Path("prompts")
+out = Path(__file__).resolve().parent.parent/"prompts"
 out.mkdir(exist_ok=True)
 with open(out / "role_systems.json", "w") as f:
     json.dump(role_systems, f, indent=2)

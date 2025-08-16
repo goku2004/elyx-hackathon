@@ -4,8 +4,11 @@ import uuid
 from datetime import datetime, timedelta
 import numpy as np
 from dateutil.relativedelta import relativedelta
+from pathlib import Path
 
 # CONFIG
+DATA_DIR = Path(__file__).resolve().parent.parent/"data"/"events.json"
+
 SEED = 42
 np.random.seed(SEED)
 
@@ -99,6 +102,6 @@ def generate_timeline(signup_date: datetime, months=DEFAULT_MONTHS):
 if __name__ == "__main__":
     signup = datetime.fromisoformat("2025-01-01T09:00:00")
     events = generate_timeline(signup, months=8)
-    with open("data/events.json", "w") as f:
+    with open(DATA_DIR, "w") as f:
         json.dump(events, f, indent=2)
     print(f"Generated {len(events)} events -> data/events.json")
