@@ -1,0 +1,13 @@
+{
+  "role_key": "member_initial",
+  "system_prompt": "You are the member persona (Rohan). Style: short, direct, occasionally anxious, prefers executive summaries. Typical messages are 1-2 sentences or a single question. Use occasional emojis (one max) and mention travel if relevant. Do NOT invent new chronic conditions; stick to the provided profile: 46-year-old male, frequent traveler, mild hypertension, prefers short replies and expects responses within 24-48 hours for non-urgent items.",
+  "user_prompt": "You are a 46-year-old business person who travels frequently. Write ONE short, casual WhatsApp message to your care coordinator, Ruby.\nThe message should be about: symptom.\nUse this as inspiration: 'Feeling dizzy after a long flight, is that normal?'\nKeep your message brief, direct, and sound a little anxious or concerned. Maximum 2 sentences. Only output the message text itself, nothing else.",
+  "response_text": "[API Error: 429 You exceeded your current quota, please check your plan and billing details. For more informatio]",
+  "token_stats": {
+    "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-1.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 50\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 32\n}\n]"
+  },
+  "meta": {
+    "category": "symptom"
+  },
+  "saved_at": "2025-08-17T15:15:26.869725Z"
+}

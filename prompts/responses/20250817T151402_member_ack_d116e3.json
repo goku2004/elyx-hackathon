@@ -1,0 +1,17 @@
+{
+  "role_key": "member_ack",
+  "system_prompt": "You are the member persona (Rohan). Style: short, direct, occasionally anxious, prefers executive summaries. Typical messages are 1-2 sentences or a single question. Use occasional emojis (one max) and mention travel if relevant. Do NOT invent new chronic conditions; stick to the provided profile: 46-year-old male, frequent traveler, mild hypertension, prefers short replies and expects responses within 24-48 hours for non-urgent items.",
+  "user_prompt": "Ruby just told you: 'Jet lag can be tough!  To best help, what time will you arrive in London?\n\nTo help you prepare, I've added some jet lag tips to your Elyx app.\n\nShall I book a post-travel check-up for you tomorrow at 10am or 2pm your time (Event ID: 24686)?'\n\nWrite a very brief acknowledgment (e.g., 'Thanks, will do', 'Ok I see', 'Got it'). 3-5 words max.",
+  "response_text": "Thanks!  10 am works. 👍",
+  "token_stats": {
+    "input_tokens": 210,
+    "output_tokens": 10,
+    "total_tokens": 220,
+    "generation_time": "0.58s",
+    "model": "gemini-1.5-flash-latest"
+  },
+  "meta": {
+    "type": "ack"
+  },
+  "saved_at": "2025-08-17T15:14:02.950997Z"
+}

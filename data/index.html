@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elyx: Interactive Journey Simulator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .card { background-color: white; border-radius: 0.75rem; border: 1px solid #e5e7eb; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); }
+        .btn-primary { background-color: #4f46e5; color: white; font-weight: 600; padding: 0.75rem 1.5rem; border-radius: 0.5rem; transition: background-color 0.3s ease; }
+        .btn-primary:hover { background-color: #4338ca; }
+        .btn-primary:disabled { background-color: #a5b4fc; cursor: not-allowed; }
+        select { border-radius: 0.375rem; border: 1px solid #d1d5db; padding: 0.5rem 0.75rem; width: 100%; background-color: #f9fafb; }
+        .message-bubble { padding: 0.75rem 1rem; border-radius: 1rem; max-width: 85%; word-wrap: break-word; }
+        .from-elyx { background-color: #eef2ff; color: #1e1b4b; border-bottom-left-radius: 0.25rem; align-self: flex-start; }
+        .from-member { background-color: #f0fdf4; color: #14532d; border-bottom-right-radius: 0.25rem; align-self: flex-end; }
+        .week-header { font-size: 1.25rem; font-weight: 600; color: #4338ca; margin-top: 1.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #e0e7ff; }
+        .event-tag { display: inline-block; background-color: #e0e7ff; color: #3730a3; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 500; margin-left: 0.5rem; }
+        .loader { border: 4px solid #f3f3f3; border-top: 4px solid #4f46e5; border-radius: 50%; width: 24px; height: 24px; animation: spin 1s linear infinite; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-7xl">
+        <header class="text-center mb-10">
+            <h1 class="text-3xl md:text-4xl font-bold text-indigo-700">Elyx: Interactive Journey Simulator</h1>
+            <p class="mt-2 text-lg text-gray-600">Set initial diagnostic results to seed a dynamic, AI-generated member journey.</p>
+        </header>
+
+        <main class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+            <!-- Input & Control Panel -->
+            <div class="lg-col-span-2 card p-6 h-fit">
+                <h2 class="text-2xl font-semibold mb-6 border-b pb-3 text-gray-700">1. Set Initial Results</h2>
+                <form id="resultsForm" class="space-y-6">
+                    <div>
+                        <label for="apoE4" class="block text-sm font-medium text-gray-700 mb-1">ApoE4 Status</label>
+                        <select id="apoE4" name="apoE4"><option value="not_present">Not Present</option><option value="one_copy">One Copy</option><option value="two_copies">Two Copies</option></select>
+                    </div>
+                    <div>
+                        <label for="cancerScreening" class="block text-sm font-medium text-gray-700 mb-1">Cancer Screening: FIT</label>
+                        <select id="cancerScreening" name="cancerScreening"><option value="negative">Negative</option><option value="positive">Positive</option></select>
+                    </div>
+                    <div>
+                        <label for="calciumScore" class="block text-sm font-medium text-gray-700 mb-1">Coronary Calcium Score</label>
+                        <select id="calciumScore" name="calciumScore"><option value="0">0</option><option value="1-99">1-99</option><option value="100-399">100-399</option><option value="400+">400+</option></select>
+                    </div>
+                    <div class="pt-4">
+                        <button type="submit" id="generateJourneyBtn" class="btn-primary w-full flex items-center justify-center">
+                            Generate 1-Month Journey
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Output Panel -->
+            <div class="lg-col-span-3 card p-6">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-700">2. Simulated Journey</h2>
+                <div id="timeline-container" class="h-[80vh] overflow-y-auto pr-4">
+                    <div id="placeholder" class="text-center text-gray-500 mt-16">
+                        <p>Your generated journey will appear here.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const API_BASE_URL = 'http://127.0.0.1:8000';
+        const timelineContainer = document.getElementById('timeline-container');
+
+        async function callBackend(endpoint, payload) {
+            const apiUrl = `${API_BASE_URL}${endpoint}`;
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.detail || `Backend Error: ${response.statusText}`);
+                }
+                return await response.json();
+            } catch (error) {
+                console.error("Fetch Error:", error);
+                showError(`Could not connect to the backend server. Please ensure it's running. [${error.message}]`);
+                return null;
+            }
+        }
+
+        function renderMessage(msg) {
+            const messageEl = document.createElement('div');
+            messageEl.className = `flex flex-col mb-2`;
+            const bubble = document.createElement('div');
+            bubble.className = `message-bubble ${msg.from === 'Rohan' ? 'from-member' : 'from-elyx'}`;
+            bubble.innerHTML = `<p class="font-bold text-sm">${msg.from}</p><p>${msg.text}</p>`;
+            messageEl.appendChild(bubble);
+            timelineContainer.appendChild(messageEl);
+        }
+
+        function renderWeekHeader(week, eventDescription) {
+            const headerEl = document.createElement('h3');
+            headerEl.className = 'week-header';
+            headerEl.innerHTML = `Week ${week} <span class="event-tag">${eventDescription.replace(/_/g, ' ')}</span>`;
+            timelineContainer.appendChild(headerEl);
+        }
+
+        document.getElementById('resultsForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const generateBtn = document.getElementById('generateJourneyBtn');
+            generateBtn.disabled = true;
+            generateBtn.innerHTML = `<div class="loader mr-2"></div> Generating...`;
+            timelineContainer.innerHTML = '';
+
+            const payload = {
+                months: 1,
+                known_issues: {
+                    "Positive FIT test": document.getElementById('cancerScreening').value === 'positive',
+                    "High Calcium Score": parseInt((document.getElementById('calciumScore').value.split('-')[0] || 0), 10) >= 100,
+                    "ApoE4 Carrier": document.getElementById('apoE4').value !== 'not_present',
+                }
+            };
+
+            const simulationData = await callBackend('/start_simulation', payload);
+
+            if (!simulationData) {
+                generateBtn.disabled = false;
+                generateBtn.innerText = "Generate 1-Month Journey";
+                return;
+            }
+            
+            let currentWeek = 0;
+            const signupDate = new Date("2025-01-01T09:00:00");
+
+            simulationData.forEach(simEvent => {
+                const eventDate = new Date(simEvent.event.start_ts);
+                const weekOfJourney = Math.floor((eventDate - signupDate) / (1000 * 60 * 60 * 24 * 7)) + 1;
+
+                if (weekOfJourney !== currentWeek) {
+                    currentWeek = weekOfJourney;
+                    // Use the first event of the week to set the header description
+                    renderWeekHeader(currentWeek, simEvent.event.event_type);
+                }
+                
+                simEvent.conversation.forEach(renderMessage);
+            });
+
+            timelineContainer.scrollTop = timelineContainer.scrollHeight;
+            generateBtn.disabled = false;
+            generateBtn.innerText = "Generate 1-Month Journey";
+        });
+
+        function showError(message) {
+            const errorEl = document.createElement('div');
+            errorEl.className = 'p-4 bg-red-100 text-red-800 rounded-lg my-4';
+            errorEl.innerHTML = `<strong>Error:</strong> ${message}`;
+            timelineContainer.prepend(errorEl);
+        }
+    </script>
+</body>
+</html>

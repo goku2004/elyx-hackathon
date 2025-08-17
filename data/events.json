@@ -1,965 +1,1762 @@
 [
   {
-    "id": "event-e1599cc6",
-    "start_ts": "2025-01-01T09:00:00",
-    "end_ts": "2025-01-08T09:00:00",
-    "event_type": "travel_week",
-    "initiator": "member",
-    "metadata": {
-      "note": "member traveling; timezone shift likely"
-    }
-  },
-  {
-    "id": "event-32498b36",
+    "id": "event-2c5487a0",
     "start_ts": "2025-01-01T18:00:00",
     "event_type": "diagnostic_panel",
-    "initiator": "lab_system",
+    "initiator": "elyx_team",
     "metadata": {
-      "panel": "full_blood_panel"
+      "panel": "Full blood panel"
     }
   },
   {
-    "id": "event-7857c991",
-    "start_ts": "2025-01-02T18:00:00",
-    "event_type": "exercise_update",
-    "initiator": "ruby",
-    "metadata": {
-      "details": "biweekly exercise plan update"
-    }
-  },
-  {
-    "id": "event-18619ee7",
+    "id": "event-51217791",
     "start_ts": "2025-01-03T22:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "nutrition"
+      "topic": "nutrition_question",
+      "details": "Question about a specific food or diet plan"
     }
   },
   {
-    "id": "event-159b5415",
+    "id": "event-c2852bd7",
     "start_ts": "2025-01-03T23:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "symptom"
+      "topic": "symptom_check",
+      "details": "Minor symptom check, e.g., headache or fatigue"
     }
   },
   {
-    "id": "event-212a59a5",
+    "id": "event-a2ef30e4",
     "start_ts": "2025-01-04T23:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "nutrition"
+      "topic": "nutrition_question",
+      "details": "Question about a specific food or diet plan"
     }
   },
   {
-    "id": "event-c0d3888f",
-    "start_ts": "2025-01-06T20:00:00",
+    "id": "event-dcc1eec3",
+    "start_ts": "2025-01-05T04:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "travel logistics"
+      "topic": "nutrition_question",
+      "details": "Question about a specific food or diet plan"
     }
   },
   {
-    "id": "event-b74ae523",
+    "id": "event-e12f583e",
+    "start_ts": "2025-01-05T20:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
+    }
+  },
+  {
+    "id": "event-e376eb5a",
+    "start_ts": "2025-01-09T23:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
+    }
+  },
+  {
+    "id": "event-5ce80ab2",
+    "start_ts": "2025-01-10T18:00:00",
+    "event_type": "exercise_update",
+    "initiator": "elyx_team",
+    "metadata": {
+      "details": "Biweekly exercise plan update"
+    }
+  },
+  {
+    "id": "event-e9d6e595",
     "start_ts": "2025-01-11T20:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "sleep"
+      "topic": "garmin_hrv_low",
+      "details": "Low HRV reading on Garmin watch"
     }
   },
   {
-    "id": "event-697a0f71",
-    "start_ts": "2025-01-12T01:00:00",
+    "id": "event-460c4fad",
+    "start_ts": "2025-01-13T21:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "symptom"
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
     }
   },
   {
-    "id": "event-6e0a44c1",
-    "start_ts": "2025-01-16T18:00:00",
-    "event_type": "exercise_update",
-    "initiator": "ruby",
-    "metadata": {
-      "details": "biweekly exercise plan update"
-    }
-  },
-  {
-    "id": "event-d9a0ecac",
-    "start_ts": "2025-01-17T03:00:00",
+    "id": "event-80e8d07b",
+    "start_ts": "2025-01-15T18:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "exercise"
+      "topic": "symptom_check",
+      "details": "Minor symptom check, e.g., headache or fatigue"
     }
   },
   {
-    "id": "event-7a2dbc06",
-    "start_ts": "2025-01-22T05:00:00",
+    "id": "event-4d289d89",
+    "start_ts": "2025-01-16T21:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "nutrition"
+      "topic": "symptom_check",
+      "details": "Minor symptom check, e.g., headache or fatigue"
     }
   },
   {
-    "id": "event-0b788229",
-    "start_ts": "2025-01-22T22:00:00",
+    "id": "event-bde3895f",
+    "start_ts": "2025-01-18T02:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "travel logistics"
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
     }
   },
   {
-    "id": "event-d4ab1ed6",
+    "id": "event-648832ff",
+    "start_ts": "2025-01-18T03:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
+    }
+  },
+  {
+    "id": "event-1f83f578",
+    "start_ts": "2025-01-19T00:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "garmin_hrv_low",
+      "details": "Low HRV reading on Garmin watch"
+    }
+  },
+  {
+    "id": "event-deea1647",
+    "start_ts": "2025-01-19T03:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
+    }
+  },
+  {
+    "id": "event-d05b33d3",
+    "start_ts": "2025-01-21T06:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
+    }
+  },
+  {
+    "id": "event-dbdcf79b",
+    "start_ts": "2025-01-22T09:00:00",
+    "end_ts": "2025-01-29T09:00:00",
+    "event_type": "travel_week",
+    "initiator": "member",
+    "metadata": {
+      "note": "Member is traveling this week"
+    }
+  },
+  {
+    "id": "event-15b44879",
     "start_ts": "2025-01-23T01:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "symptom"
+      "topic": "symptom_check",
+      "details": "Minor symptom check, e.g., headache or fatigue"
     }
   },
   {
-    "id": "event-6c861c52",
+    "id": "event-cd803791",
+    "start_ts": "2025-01-23T18:00:00",
+    "event_type": "exercise_update",
+    "initiator": "elyx_team",
+    "metadata": {
+      "details": "Biweekly exercise plan update"
+    }
+  },
+  {
+    "id": "event-7140f38f",
     "start_ts": "2025-01-26T00:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "exercise"
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
     }
   },
   {
-    "id": "event-3b1d9478",
+    "id": "event-8f3fdee1",
+    "start_ts": "2025-01-27T00:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
+    }
+  },
+  {
+    "id": "event-3c21ac9d",
     "start_ts": "2025-01-27T17:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "travel logistics"
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
     }
   },
   {
-    "id": "event-2e071ede",
-    "start_ts": "2025-01-29T09:00:00",
-    "end_ts": "2025-02-05T09:00:00",
+    "id": "event-8d4ff1a1",
+    "start_ts": "2025-01-30T23:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
+    }
+  },
+  {
+    "id": "event-45be85c0",
+    "start_ts": "2025-01-31T05:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
+    }
+  },
+  {
+    "id": "event-332bc89c",
+    "start_ts": "2025-02-02T03:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
+    }
+  },
+  {
+    "id": "event-ceab9ec2",
+    "start_ts": "2025-02-02T04:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition_question",
+      "details": "Question about a specific food or diet plan"
+    }
+  },
+  {
+    "id": "event-55537da1",
+    "start_ts": "2025-02-03T16:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
+    }
+  },
+  {
+    "id": "event-2e6dc5cf",
+    "start_ts": "2025-02-07T01:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
+    }
+  },
+  {
+    "id": "event-1033716c",
+    "start_ts": "2025-02-07T01:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
+    }
+  },
+  {
+    "id": "event-d0692723",
+    "start_ts": "2025-02-07T18:00:00",
+    "event_type": "exercise_update",
+    "initiator": "elyx_team",
+    "metadata": {
+      "details": "Biweekly exercise plan update"
+    }
+  },
+  {
+    "id": "event-99472474",
+    "start_ts": "2025-02-08T21:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom_check",
+      "details": "Minor symptom check, e.g., headache or fatigue"
+    }
+  },
+  {
+    "id": "event-61f4f029",
+    "start_ts": "2025-02-09T05:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
+    }
+  },
+  {
+    "id": "event-ae5601b8",
+    "start_ts": "2025-02-13T03:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
+    }
+  },
+  {
+    "id": "event-ca67f17c",
+    "start_ts": "2025-02-16T00:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
+    }
+  },
+  {
+    "id": "event-95fa9724",
+    "start_ts": "2025-02-16T04:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "garmin_hrv_low",
+      "details": "Low HRV reading on Garmin watch"
+    }
+  },
+  {
+    "id": "event-044d6a3d",
+    "start_ts": "2025-02-16T23:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
+    }
+  },
+  {
+    "id": "event-034337d8",
+    "start_ts": "2025-02-17T04:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
+    }
+  },
+  {
+    "id": "event-3fdb178f",
+    "start_ts": "2025-02-17T06:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom_check",
+      "details": "Minor symptom check, e.g., headache or fatigue"
+    }
+  },
+  {
+    "id": "event-60328488",
+    "start_ts": "2025-02-19T09:00:00",
+    "end_ts": "2025-02-26T09:00:00",
     "event_type": "travel_week",
     "initiator": "member",
     "metadata": {
-      "note": "member traveling; timezone shift likely"
+      "note": "Member is traveling this week"
     }
   },
   {
-    "id": "event-3e341a04",
-    "start_ts": "2025-01-30T18:00:00",
+    "id": "event-19f84c8a",
+    "start_ts": "2025-02-19T23:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "garmin_hrv_low",
+      "details": "Low HRV reading on Garmin watch"
+    }
+  },
+  {
+    "id": "event-4382c459",
+    "start_ts": "2025-02-20T18:00:00",
     "event_type": "exercise_update",
-    "initiator": "ruby",
+    "initiator": "elyx_team",
     "metadata": {
-      "details": "biweekly exercise plan update"
+      "details": "Biweekly exercise plan update"
     }
   },
   {
-    "id": "event-bb7b252a",
-    "start_ts": "2025-02-01T22:00:00",
+    "id": "event-4a7f9c47",
+    "start_ts": "2025-02-22T23:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "exercise"
+      "topic": "nutrition_question",
+      "details": "Question about a specific food or diet plan"
     }
   },
   {
-    "id": "event-8932fab1",
-    "start_ts": "2025-02-10T16:00:00",
+    "id": "event-cc5c3791",
+    "start_ts": "2025-02-26T23:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "exercise"
+      "topic": "nutrition_question",
+      "details": "Question about a specific food or diet plan"
     }
   },
   {
-    "id": "event-1cc97068",
-    "start_ts": "2025-02-13T18:00:00",
+    "id": "event-a30ce0ee",
+    "start_ts": "2025-02-27T03:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "garmin_hrv_low",
+      "details": "Low HRV reading on Garmin watch"
+    }
+  },
+  {
+    "id": "event-14dc2fbc",
+    "start_ts": "2025-02-28T16:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition_question",
+      "details": "Question about a specific food or diet plan"
+    }
+  },
+  {
+    "id": "event-e9e7efe7",
+    "start_ts": "2025-03-01T17:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "garmin_hrv_low",
+      "details": "Low HRV reading on Garmin watch"
+    }
+  },
+  {
+    "id": "event-eb577dfe",
+    "start_ts": "2025-03-03T01:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
+    }
+  },
+  {
+    "id": "event-3c342aaf",
+    "start_ts": "2025-03-03T23:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom_check",
+      "details": "Minor symptom check, e.g., headache or fatigue"
+    }
+  },
+  {
+    "id": "event-e26d799e",
+    "start_ts": "2025-03-05T18:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom_check",
+      "details": "Minor symptom check, e.g., headache or fatigue"
+    }
+  },
+  {
+    "id": "event-6a1781bc",
+    "start_ts": "2025-03-06T18:00:00",
     "event_type": "exercise_update",
-    "initiator": "ruby",
+    "initiator": "elyx_team",
     "metadata": {
-      "details": "biweekly exercise plan update"
+      "details": "Biweekly exercise plan update"
     }
   },
   {
-    "id": "event-d85c38c4",
-    "start_ts": "2025-02-18T01:00:00",
+    "id": "event-4bb29c93",
+    "start_ts": "2025-03-07T03:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "exercise"
+      "topic": "symptom_check",
+      "details": "Minor symptom check, e.g., headache or fatigue"
     }
   },
   {
-    "id": "event-8c7ae979",
-    "start_ts": "2025-02-18T04:00:00",
+    "id": "event-6b1f314f",
+    "start_ts": "2025-03-08T00:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "travel logistics"
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
     }
   },
   {
-    "id": "event-ef3e9b3b",
-    "start_ts": "2025-02-21T00:00:00",
+    "id": "event-34ce39d7",
+    "start_ts": "2025-03-10T01:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "exercise"
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
     }
   },
   {
-    "id": "event-c3318855",
-    "start_ts": "2025-02-23T03:00:00",
+    "id": "event-483cb389",
+    "start_ts": "2025-03-10T18:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "symptom"
+      "topic": "garmin_hrv_low",
+      "details": "Low HRV reading on Garmin watch"
     }
   },
   {
-    "id": "event-5e2ff3ab",
-    "start_ts": "2025-02-23T17:00:00",
+    "id": "event-5ceba4f7",
+    "start_ts": "2025-03-11T02:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "symptom"
+      "topic": "nutrition_question",
+      "details": "Question about a specific food or diet plan"
     }
   },
   {
-    "id": "event-ed179511",
-    "start_ts": "2025-02-24T23:00:00",
+    "id": "event-0333ac88",
+    "start_ts": "2025-03-12T19:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "symptom"
+      "topic": "symptom_check",
+      "details": "Minor symptom check, e.g., headache or fatigue"
     }
   },
   {
-    "id": "event-c17c2b0d",
-    "start_ts": "2025-02-26T03:00:00",
+    "id": "event-6ee8b2fa",
+    "start_ts": "2025-03-14T18:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "sleep"
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
     }
   },
   {
-    "id": "event-2550c3c1",
-    "start_ts": "2025-02-26T09:00:00",
-    "end_ts": "2025-03-05T09:00:00",
+    "id": "event-d8a1e595",
+    "start_ts": "2025-03-15T17:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
+    }
+  },
+  {
+    "id": "event-b5deee14",
+    "start_ts": "2025-03-16T05:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom_check",
+      "details": "Minor symptom check, e.g., headache or fatigue"
+    }
+  },
+  {
+    "id": "event-54978fc0",
+    "start_ts": "2025-03-16T19:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom_check",
+      "details": "Minor symptom check, e.g., headache or fatigue"
+    }
+  },
+  {
+    "id": "event-d82625a8",
+    "start_ts": "2025-03-17T06:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition_question",
+      "details": "Question about a specific food or diet plan"
+    }
+  },
+  {
+    "id": "event-7d502667",
+    "start_ts": "2025-03-19T09:00:00",
+    "end_ts": "2025-03-26T09:00:00",
     "event_type": "travel_week",
     "initiator": "member",
     "metadata": {
-      "note": "member traveling; timezone shift likely"
+      "note": "Member is traveling this week"
     }
   },
   {
-    "id": "event-2d317961",
-    "start_ts": "2025-02-27T18:00:00",
+    "id": "event-8ea09584",
+    "start_ts": "2025-03-19T20:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
+    }
+  },
+  {
+    "id": "event-5bb10ddb",
+    "start_ts": "2025-03-20T18:00:00",
     "event_type": "exercise_update",
-    "initiator": "ruby",
+    "initiator": "elyx_team",
     "metadata": {
-      "details": "biweekly exercise plan update"
+      "details": "Biweekly exercise plan update"
     }
   },
   {
-    "id": "event-82cead3a",
-    "start_ts": "2025-03-01T23:00:00",
+    "id": "event-266326f2",
+    "start_ts": "2025-03-22T19:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "nutrition"
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
     }
   },
   {
-    "id": "event-60586fd4",
-    "start_ts": "2025-03-05T00:00:00",
+    "id": "event-f384ca65",
+    "start_ts": "2025-03-23T03:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "sleep"
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
     }
   },
   {
-    "id": "event-0ee88c47",
-    "start_ts": "2025-03-06T03:00:00",
+    "id": "event-2f2a3844",
+    "start_ts": "2025-03-26T16:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "sleep"
+      "topic": "garmin_hrv_low",
+      "details": "Low HRV reading on Garmin watch"
     }
   },
   {
-    "id": "event-c7dbc4d0",
-    "start_ts": "2025-03-06T22:00:00",
+    "id": "event-51718085",
+    "start_ts": "2025-03-26T22:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "travel logistics"
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
     }
   },
   {
-    "id": "event-403a64a0",
-    "start_ts": "2025-03-08T17:00:00",
+    "id": "event-e916b86a",
+    "start_ts": "2025-03-29T01:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "sleep"
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
     }
   },
   {
-    "id": "event-03a7272a",
-    "start_ts": "2025-03-13T18:00:00",
-    "event_type": "exercise_update",
-    "initiator": "ruby",
-    "metadata": {
-      "details": "biweekly exercise plan update"
-    }
-  },
-  {
-    "id": "event-ad0789a5",
-    "start_ts": "2025-03-22T03:00:00",
+    "id": "event-501a7f99",
+    "start_ts": "2025-03-29T05:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "nutrition"
+      "topic": "garmin_hrv_low",
+      "details": "Low HRV reading on Garmin watch"
     }
   },
   {
-    "id": "event-31efd959",
-    "start_ts": "2025-03-26T09:00:00",
-    "end_ts": "2025-04-02T09:00:00",
-    "event_type": "travel_week",
-    "initiator": "member",
-    "metadata": {
-      "note": "member traveling; timezone shift likely"
-    }
-  },
-  {
-    "id": "event-80823f97",
-    "start_ts": "2025-03-27T06:00:00",
-    "event_type": "member_message",
-    "initiator": "member",
-    "metadata": {
-      "topic": "travel logistics"
-    }
-  },
-  {
-    "id": "event-772c2ef4",
-    "start_ts": "2025-03-27T18:00:00",
-    "event_type": "exercise_update",
-    "initiator": "ruby",
-    "metadata": {
-      "details": "biweekly exercise plan update"
-    }
-  },
-  {
-    "id": "event-0aed8988",
-    "start_ts": "2025-03-28T03:00:00",
-    "event_type": "member_message",
-    "initiator": "member",
-    "metadata": {
-      "topic": "symptom"
-    }
-  },
-  {
-    "id": "event-81756554",
-    "start_ts": "2025-03-29T06:00:00",
-    "event_type": "member_message",
-    "initiator": "member",
-    "metadata": {
-      "topic": "sleep"
-    }
-  },
-  {
-    "id": "event-cb629c9c",
-    "start_ts": "2025-03-30T04:00:00",
-    "event_type": "member_message",
-    "initiator": "member",
-    "metadata": {
-      "topic": "exercise"
-    }
-  },
-  {
-    "id": "event-a2c778ce",
-    "start_ts": "2025-03-31T22:00:00",
-    "event_type": "member_message",
-    "initiator": "member",
-    "metadata": {
-      "topic": "nutrition"
-    }
-  },
-  {
-    "id": "event-d94bf542",
+    "id": "event-a6c1f54e",
     "start_ts": "2025-04-01T18:00:00",
     "event_type": "diagnostic_panel",
-    "initiator": "lab_system",
+    "initiator": "elyx_team",
     "metadata": {
-      "panel": "full_blood_panel"
+      "panel": "Full blood panel"
     }
   },
   {
-    "id": "event-186de4e5",
-    "start_ts": "2025-04-05T04:00:00",
+    "id": "event-a599a9ae",
+    "start_ts": "2025-04-02T18:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "exercise"
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
     }
   },
   {
-    "id": "event-44b2353b",
-    "start_ts": "2025-04-06T22:00:00",
-    "event_type": "member_message",
-    "initiator": "member",
-    "metadata": {
-      "topic": "nutrition"
-    }
-  },
-  {
-    "id": "event-1ed4831f",
-    "start_ts": "2025-04-09T22:00:00",
-    "event_type": "member_message",
-    "initiator": "member",
-    "metadata": {
-      "topic": "sleep"
-    }
-  },
-  {
-    "id": "event-622ed1f2",
-    "start_ts": "2025-04-10T18:00:00",
+    "id": "event-45df197c",
+    "start_ts": "2025-04-04T18:00:00",
     "event_type": "exercise_update",
-    "initiator": "ruby",
+    "initiator": "elyx_team",
     "metadata": {
-      "details": "biweekly exercise plan update"
+      "details": "Biweekly exercise plan update"
     }
   },
   {
-    "id": "event-a5f9f4ab",
-    "start_ts": "2025-04-10T22:00:00",
+    "id": "event-582e942d",
+    "start_ts": "2025-04-05T00:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "exercise"
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
     }
   },
   {
-    "id": "event-6fbb7c86",
-    "start_ts": "2025-04-12T19:00:00",
+    "id": "event-91a0ee25",
+    "start_ts": "2025-04-06T16:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "nutrition"
+      "topic": "nutrition_question",
+      "details": "Question about a specific food or diet plan"
     }
   },
   {
-    "id": "event-5373bd80",
-    "start_ts": "2025-04-13T03:00:00",
+    "id": "event-a15c63f4",
+    "start_ts": "2025-04-10T01:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "exercise"
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
     }
   },
   {
-    "id": "event-14c2c065",
-    "start_ts": "2025-04-21T00:00:00",
+    "id": "event-d70ffe08",
+    "start_ts": "2025-04-12T16:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "nutrition"
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
     }
   },
   {
-    "id": "event-3a291410",
-    "start_ts": "2025-04-22T21:00:00",
+    "id": "event-cac91d61",
+    "start_ts": "2025-04-12T23:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "nutrition"
+      "topic": "nutrition_question",
+      "details": "Question about a specific food or diet plan"
     }
   },
   {
-    "id": "event-6326f641",
-    "start_ts": "2025-04-23T09:00:00",
-    "end_ts": "2025-04-30T09:00:00",
+    "id": "event-20fa3c5e",
+    "start_ts": "2025-04-13T05:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
+    }
+  },
+  {
+    "id": "event-bbc903f5",
+    "start_ts": "2025-04-14T23:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "garmin_hrv_low",
+      "details": "Low HRV reading on Garmin watch"
+    }
+  },
+  {
+    "id": "event-f48a4d30",
+    "start_ts": "2025-04-16T09:00:00",
+    "end_ts": "2025-04-23T09:00:00",
     "event_type": "travel_week",
     "initiator": "member",
     "metadata": {
-      "note": "member traveling; timezone shift likely"
+      "note": "Member is traveling this week"
     }
   },
   {
-    "id": "event-46e29be4",
-    "start_ts": "2025-04-24T18:00:00",
+    "id": "event-21ec1b5f",
+    "start_ts": "2025-04-17T18:00:00",
     "event_type": "exercise_update",
-    "initiator": "ruby",
+    "initiator": "elyx_team",
     "metadata": {
-      "details": "biweekly exercise plan update"
+      "details": "Biweekly exercise plan update"
     }
   },
   {
-    "id": "event-edd70424",
-    "start_ts": "2025-04-26T01:00:00",
+    "id": "event-b6e49a73",
+    "start_ts": "2025-04-18T16:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "exercise"
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
     }
   },
   {
-    "id": "event-b3591ea7",
-    "start_ts": "2025-04-30T19:00:00",
+    "id": "event-aac2e7b2",
+    "start_ts": "2025-04-20T16:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "sleep"
+      "topic": "garmin_hrv_low",
+      "details": "Low HRV reading on Garmin watch"
     }
   },
   {
-    "id": "event-8606c876",
-    "start_ts": "2025-05-08T18:00:00",
+    "id": "event-3e38b680",
+    "start_ts": "2025-04-23T16:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition_question",
+      "details": "Question about a specific food or diet plan"
+    }
+  },
+  {
+    "id": "event-c7979212",
+    "start_ts": "2025-04-26T21:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom_check",
+      "details": "Minor symptom check, e.g., headache or fatigue"
+    }
+  },
+  {
+    "id": "event-48cb1608",
+    "start_ts": "2025-04-26T22:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition_question",
+      "details": "Question about a specific food or diet plan"
+    }
+  },
+  {
+    "id": "event-bb7c414c",
+    "start_ts": "2025-04-27T01:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
+    }
+  },
+  {
+    "id": "event-8cb6f609",
+    "start_ts": "2025-04-28T17:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom_check",
+      "details": "Minor symptom check, e.g., headache or fatigue"
+    }
+  },
+  {
+    "id": "event-8f75f358",
+    "start_ts": "2025-05-01T00:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
+    }
+  },
+  {
+    "id": "event-36607e39",
+    "start_ts": "2025-05-01T06:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
+    }
+  },
+  {
+    "id": "event-fc587402",
+    "start_ts": "2025-05-02T18:00:00",
     "event_type": "exercise_update",
-    "initiator": "ruby",
+    "initiator": "elyx_team",
     "metadata": {
-      "details": "biweekly exercise plan update"
+      "details": "Biweekly exercise plan update"
     }
   },
   {
-    "id": "event-9ecc6ed6",
-    "start_ts": "2025-05-20T17:00:00",
+    "id": "event-e269b10d",
+    "start_ts": "2025-05-02T21:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "nutrition"
+      "topic": "symptom_check",
+      "details": "Minor symptom check, e.g., headache or fatigue"
     }
   },
   {
-    "id": "event-25a159d3",
-    "start_ts": "2025-05-21T09:00:00",
-    "end_ts": "2025-05-28T09:00:00",
+    "id": "event-ad9e0868",
+    "start_ts": "2025-05-04T19:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
+    }
+  },
+  {
+    "id": "event-4eca9029",
+    "start_ts": "2025-05-05T21:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition_question",
+      "details": "Question about a specific food or diet plan"
+    }
+  },
+  {
+    "id": "event-7b5e018d",
+    "start_ts": "2025-05-07T16:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
+    }
+  },
+  {
+    "id": "event-cc455152",
+    "start_ts": "2025-05-08T02:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
+    }
+  },
+  {
+    "id": "event-4e7fe3df",
+    "start_ts": "2025-05-10T06:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition_question",
+      "details": "Question about a specific food or diet plan"
+    }
+  },
+  {
+    "id": "event-47c23a7b",
+    "start_ts": "2025-05-10T18:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
+    }
+  },
+  {
+    "id": "event-95790451",
+    "start_ts": "2025-05-10T22:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
+    }
+  },
+  {
+    "id": "event-d799129d",
+    "start_ts": "2025-05-11T03:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition_question",
+      "details": "Question about a specific food or diet plan"
+    }
+  },
+  {
+    "id": "event-951b5c0e",
+    "start_ts": "2025-05-14T09:00:00",
+    "end_ts": "2025-05-21T09:00:00",
     "event_type": "travel_week",
     "initiator": "member",
     "metadata": {
-      "note": "member traveling; timezone shift likely"
+      "note": "Member is traveling this week"
     }
   },
   {
-    "id": "event-56970ab2",
-    "start_ts": "2025-05-22T02:00:00",
-    "event_type": "member_message",
-    "initiator": "member",
-    "metadata": {
-      "topic": "sleep"
-    }
-  },
-  {
-    "id": "event-8a2f2479",
-    "start_ts": "2025-05-22T18:00:00",
+    "id": "event-d45b603b",
+    "start_ts": "2025-05-15T18:00:00",
     "event_type": "exercise_update",
-    "initiator": "ruby",
+    "initiator": "elyx_team",
     "metadata": {
-      "details": "biweekly exercise plan update"
+      "details": "Biweekly exercise plan update"
     }
   },
   {
-    "id": "event-3fe38ca4",
-    "start_ts": "2025-05-28T16:00:00",
+    "id": "event-8cfd99f8",
+    "start_ts": "2025-05-15T18:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "nutrition"
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
     }
   },
   {
-    "id": "event-34756cfd",
-    "start_ts": "2025-06-02T17:00:00",
+    "id": "event-176b891f",
+    "start_ts": "2025-05-15T22:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "symptom"
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
     }
   },
   {
-    "id": "event-276c04ec",
-    "start_ts": "2025-06-05T06:00:00",
+    "id": "event-9eaf1e7c",
+    "start_ts": "2025-05-22T00:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "symptom"
+      "topic": "nutrition_question",
+      "details": "Question about a specific food or diet plan"
     }
   },
   {
-    "id": "event-81932822",
-    "start_ts": "2025-06-05T18:00:00",
+    "id": "event-a03d3666",
+    "start_ts": "2025-05-22T05:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
+    }
+  },
+  {
+    "id": "event-483d062c",
+    "start_ts": "2025-05-23T00:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
+    }
+  },
+  {
+    "id": "event-50f5d172",
+    "start_ts": "2025-05-23T18:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
+    }
+  },
+  {
+    "id": "event-12029961",
+    "start_ts": "2025-05-24T16:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
+    }
+  },
+  {
+    "id": "event-0263bcf4",
+    "start_ts": "2025-05-25T20:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition_question",
+      "details": "Question about a specific food or diet plan"
+    }
+  },
+  {
+    "id": "event-a46cbc64",
+    "start_ts": "2025-05-26T23:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "garmin_hrv_low",
+      "details": "Low HRV reading on Garmin watch"
+    }
+  },
+  {
+    "id": "event-386763fa",
+    "start_ts": "2025-05-28T18:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "garmin_hrv_low",
+      "details": "Low HRV reading on Garmin watch"
+    }
+  },
+  {
+    "id": "event-c046a445",
+    "start_ts": "2025-05-29T17:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
+    }
+  },
+  {
+    "id": "event-05c54871",
+    "start_ts": "2025-05-30T16:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
+    }
+  },
+  {
+    "id": "event-92e8a2ea",
+    "start_ts": "2025-05-30T18:00:00",
     "event_type": "exercise_update",
-    "initiator": "ruby",
+    "initiator": "elyx_team",
     "metadata": {
-      "details": "biweekly exercise plan update"
+      "details": "Biweekly exercise plan update"
     }
   },
   {
-    "id": "event-4dbace78",
-    "start_ts": "2025-06-06T23:00:00",
+    "id": "event-d68c848c",
+    "start_ts": "2025-06-01T17:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "nutrition"
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
     }
   },
   {
-    "id": "event-b53a25cc",
-    "start_ts": "2025-06-07T17:00:00",
+    "id": "event-6382ae34",
+    "start_ts": "2025-06-02T18:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "nutrition"
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
     }
   },
   {
-    "id": "event-783b0088",
-    "start_ts": "2025-06-13T19:00:00",
+    "id": "event-96d62e5f",
+    "start_ts": "2025-06-02T23:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "exercise"
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
     }
   },
   {
-    "id": "event-92abb2e1",
+    "id": "event-7f0bd0bc",
+    "start_ts": "2025-06-04T19:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "garmin_hrv_low",
+      "details": "Low HRV reading on Garmin watch"
+    }
+  },
+  {
+    "id": "event-555c3dd7",
+    "start_ts": "2025-06-06T16:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "garmin_hrv_low",
+      "details": "Low HRV reading on Garmin watch"
+    }
+  },
+  {
+    "id": "event-c62d2b92",
+    "start_ts": "2025-06-08T02:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition_question",
+      "details": "Question about a specific food or diet plan"
+    }
+  },
+  {
+    "id": "event-42fa2009",
+    "start_ts": "2025-06-09T00:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
+    }
+  },
+  {
+    "id": "event-e7011cca",
+    "start_ts": "2025-06-09T20:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
+    }
+  },
+  {
+    "id": "event-bf0a2d58",
+    "start_ts": "2025-06-09T22:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
+    }
+  },
+  {
+    "id": "event-98706e0e",
+    "start_ts": "2025-06-11T09:00:00",
+    "end_ts": "2025-06-18T09:00:00",
+    "event_type": "travel_week",
+    "initiator": "member",
+    "metadata": {
+      "note": "Member is traveling this week"
+    }
+  },
+  {
+    "id": "event-de23a7ba",
+    "start_ts": "2025-06-13T17:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom_check",
+      "details": "Minor symptom check, e.g., headache or fatigue"
+    }
+  },
+  {
+    "id": "event-5bbc52dc",
+    "start_ts": "2025-06-13T18:00:00",
+    "event_type": "exercise_update",
+    "initiator": "elyx_team",
+    "metadata": {
+      "details": "Biweekly exercise plan update"
+    }
+  },
+  {
+    "id": "event-ede75011",
     "start_ts": "2025-06-13T21:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "symptom"
+      "topic": "nutrition_question",
+      "details": "Question about a specific food or diet plan"
     }
   },
   {
-    "id": "event-518bb1e3",
-    "start_ts": "2025-06-18T09:00:00",
-    "end_ts": "2025-06-25T09:00:00",
-    "event_type": "travel_week",
+    "id": "event-474fa6aa",
+    "start_ts": "2025-06-16T21:00:00",
+    "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "note": "member traveling; timezone shift likely"
+      "topic": "symptom_check",
+      "details": "Minor symptom check, e.g., headache or fatigue"
     }
   },
   {
-    "id": "event-260ee9a4",
-    "start_ts": "2025-06-19T18:00:00",
+    "id": "event-5e880975",
+    "start_ts": "2025-06-18T16:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
+    }
+  },
+  {
+    "id": "event-1d39eea0",
+    "start_ts": "2025-06-19T03:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "garmin_hrv_low",
+      "details": "Low HRV reading on Garmin watch"
+    }
+  },
+  {
+    "id": "event-385d60de",
+    "start_ts": "2025-06-20T19:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition_question",
+      "details": "Question about a specific food or diet plan"
+    }
+  },
+  {
+    "id": "event-92ea6e48",
+    "start_ts": "2025-06-22T05:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom_check",
+      "details": "Minor symptom check, e.g., headache or fatigue"
+    }
+  },
+  {
+    "id": "event-294904a8",
+    "start_ts": "2025-06-23T03:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom_check",
+      "details": "Minor symptom check, e.g., headache or fatigue"
+    }
+  },
+  {
+    "id": "event-12f7bf2a",
+    "start_ts": "2025-06-25T20:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom_check",
+      "details": "Minor symptom check, e.g., headache or fatigue"
+    }
+  },
+  {
+    "id": "event-24a3634c",
+    "start_ts": "2025-06-27T18:00:00",
     "event_type": "exercise_update",
-    "initiator": "ruby",
+    "initiator": "elyx_team",
     "metadata": {
-      "details": "biweekly exercise plan update"
+      "details": "Biweekly exercise plan update"
     }
   },
   {
-    "id": "event-04864ccd",
-    "start_ts": "2025-06-21T06:00:00",
+    "id": "event-d2f44cf3",
+    "start_ts": "2025-06-30T18:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "nutrition"
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
     }
   },
   {
-    "id": "event-61aa6985",
-    "start_ts": "2025-06-25T16:00:00",
-    "event_type": "member_message",
-    "initiator": "member",
-    "metadata": {
-      "topic": "travel logistics"
-    }
-  },
-  {
-    "id": "event-c61cccc0",
+    "id": "event-fec92a5a",
     "start_ts": "2025-07-01T18:00:00",
     "event_type": "diagnostic_panel",
-    "initiator": "lab_system",
+    "initiator": "elyx_team",
     "metadata": {
-      "panel": "full_blood_panel"
+      "panel": "Full blood panel"
     }
   },
   {
-    "id": "event-4b9d074c",
-    "start_ts": "2025-07-03T18:00:00",
-    "event_type": "exercise_update",
-    "initiator": "ruby",
-    "metadata": {
-      "details": "biweekly exercise plan update"
-    }
-  },
-  {
-    "id": "event-01857c6f",
-    "start_ts": "2025-07-04T00:00:00",
+    "id": "event-a8c9ef83",
+    "start_ts": "2025-07-04T17:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "exercise"
+      "topic": "garmin_hrv_low",
+      "details": "Low HRV reading on Garmin watch"
     }
   },
   {
-    "id": "event-38791b79",
-    "start_ts": "2025-07-04T22:00:00",
+    "id": "event-884575b5",
+    "start_ts": "2025-07-05T16:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "exercise"
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
     }
   },
   {
-    "id": "event-d699390b",
-    "start_ts": "2025-07-09T05:00:00",
+    "id": "event-9efff7f7",
+    "start_ts": "2025-07-06T20:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "travel logistics"
+      "topic": "garmin_hrv_low",
+      "details": "Low HRV reading on Garmin watch"
     }
   },
   {
-    "id": "event-fe01f6cf",
-    "start_ts": "2025-07-11T22:00:00",
+    "id": "event-ced71bc4",
+    "start_ts": "2025-07-07T20:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "sleep"
+      "topic": "nutrition_question",
+      "details": "Question about a specific food or diet plan"
     }
   },
   {
-    "id": "event-3ec480a0",
-    "start_ts": "2025-07-12T20:00:00",
-    "event_type": "member_message",
-    "initiator": "member",
-    "metadata": {
-      "topic": "symptom"
-    }
-  },
-  {
-    "id": "event-8dba5a8e",
-    "start_ts": "2025-07-16T09:00:00",
-    "end_ts": "2025-07-23T09:00:00",
+    "id": "event-710a0df7",
+    "start_ts": "2025-07-09T09:00:00",
+    "end_ts": "2025-07-16T09:00:00",
     "event_type": "travel_week",
     "initiator": "member",
     "metadata": {
-      "note": "member traveling; timezone shift likely"
+      "note": "Member is traveling this week"
     }
   },
   {
-    "id": "event-1723b0aa",
+    "id": "event-1f41764b",
+    "start_ts": "2025-07-11T18:00:00",
+    "event_type": "exercise_update",
+    "initiator": "elyx_team",
+    "metadata": {
+      "details": "Biweekly exercise plan update"
+    }
+  },
+  {
+    "id": "event-d9f5f2cb",
+    "start_ts": "2025-07-12T01:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
+    }
+  },
+  {
+    "id": "event-fd31b8ac",
+    "start_ts": "2025-07-14T22:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
+    }
+  },
+  {
+    "id": "event-7ee2b99e",
+    "start_ts": "2025-07-14T23:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
+    }
+  },
+  {
+    "id": "event-141592a4",
+    "start_ts": "2025-07-15T01:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "nutrition_question",
+      "details": "Question about a specific food or diet plan"
+    }
+  },
+  {
+    "id": "event-19e84778",
     "start_ts": "2025-07-16T23:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "exercise"
+      "topic": "garmin_hrv_low",
+      "details": "Low HRV reading on Garmin watch"
     }
   },
   {
-    "id": "event-5d7c22c0",
-    "start_ts": "2025-07-17T18:00:00",
+    "id": "event-03a5fec5",
+    "start_ts": "2025-07-17T02:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
+    }
+  },
+  {
+    "id": "event-ea905497",
+    "start_ts": "2025-07-18T17:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "garmin_hrv_low",
+      "details": "Low HRV reading on Garmin watch"
+    }
+  },
+  {
+    "id": "event-2aada97b",
+    "start_ts": "2025-07-21T01:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
+    }
+  },
+  {
+    "id": "event-17e73bac",
+    "start_ts": "2025-07-21T03:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
+    }
+  },
+  {
+    "id": "event-452480d2",
+    "start_ts": "2025-07-23T23:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
+    }
+  },
+  {
+    "id": "event-5cc5388b",
+    "start_ts": "2025-07-24T18:00:00",
     "event_type": "exercise_update",
-    "initiator": "ruby",
+    "initiator": "elyx_team",
     "metadata": {
-      "details": "biweekly exercise plan update"
+      "details": "Biweekly exercise plan update"
     }
   },
   {
-    "id": "event-81681a6f",
-    "start_ts": "2025-07-18T16:00:00",
+    "id": "event-f89af14b",
+    "start_ts": "2025-07-27T04:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "exercise"
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
     }
   },
   {
-    "id": "event-958b3ef4",
-    "start_ts": "2025-07-21T18:00:00",
+    "id": "event-018493de",
+    "start_ts": "2025-07-29T03:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "sleep"
+      "topic": "nutrition_question",
+      "details": "Question about a specific food or diet plan"
     }
   },
   {
-    "id": "event-77e5e800",
-    "start_ts": "2025-07-21T23:00:00",
+    "id": "event-5d4d9be4",
+    "start_ts": "2025-07-31T21:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "exercise"
+      "topic": "garmin_hrv_low",
+      "details": "Low HRV reading on Garmin watch"
     }
   },
   {
-    "id": "event-1156ec82",
-    "start_ts": "2025-07-28T17:00:00",
+    "id": "event-89e408a4",
+    "start_ts": "2025-08-01T06:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "travel logistics"
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
     }
   },
   {
-    "id": "event-e87588c6",
-    "start_ts": "2025-07-30T19:00:00",
+    "id": "event-ae162d13",
+    "start_ts": "2025-08-02T17:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "sleep"
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
     }
   },
   {
-    "id": "event-a207bed5",
-    "start_ts": "2025-07-31T18:00:00",
-    "event_type": "exercise_update",
-    "initiator": "ruby",
-    "metadata": {
-      "details": "biweekly exercise plan update"
-    }
-  },
-  {
-    "id": "event-22e58790",
-    "start_ts": "2025-08-04T20:00:00",
+    "id": "event-01b3987d",
+    "start_ts": "2025-08-03T01:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "exercise"
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
     }
   },
   {
-    "id": "event-a3544ca7",
-    "start_ts": "2025-08-08T21:00:00",
+    "id": "event-b87671e6",
+    "start_ts": "2025-08-03T21:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "nutrition"
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
     }
   },
   {
-    "id": "event-a0f83386",
-    "start_ts": "2025-08-10T02:00:00",
+    "id": "event-c19da520",
+    "start_ts": "2025-08-04T18:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "nutrition"
+      "topic": "garmin_hrv_low",
+      "details": "Low HRV reading on Garmin watch"
     }
   },
   {
-    "id": "event-9bd92452",
-    "start_ts": "2025-08-11T22:00:00",
-    "event_type": "member_message",
-    "initiator": "member",
-    "metadata": {
-      "topic": "symptom"
-    }
-  },
-  {
-    "id": "event-fa4d1ea9",
-    "start_ts": "2025-08-13T09:00:00",
-    "end_ts": "2025-08-20T09:00:00",
+    "id": "event-a54f91a7",
+    "start_ts": "2025-08-06T09:00:00",
+    "end_ts": "2025-08-13T09:00:00",
     "event_type": "travel_week",
     "initiator": "member",
     "metadata": {
-      "note": "member traveling; timezone shift likely"
+      "note": "Member is traveling this week"
     }
   },
   {
-    "id": "event-7c091272",
-    "start_ts": "2025-08-14T18:00:00",
-    "event_type": "exercise_update",
-    "initiator": "ruby",
+    "id": "event-031d910d",
+    "start_ts": "2025-08-06T23:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
     "metadata": {
-      "details": "biweekly exercise plan update"
+      "topic": "symptom_check",
+      "details": "Minor symptom check, e.g., headache or fatigue"
     }
   },
   {
-    "id": "event-6e780eb7",
+    "id": "event-2f8a9b93",
+    "start_ts": "2025-08-07T18:00:00",
+    "event_type": "exercise_update",
+    "initiator": "elyx_team",
+    "metadata": {
+      "details": "Biweekly exercise plan update"
+    }
+  },
+  {
+    "id": "event-1c5c7e02",
+    "start_ts": "2025-08-09T03:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom_check",
+      "details": "Minor symptom check, e.g., headache or fatigue"
+    }
+  },
+  {
+    "id": "event-55c1a8c6",
+    "start_ts": "2025-08-10T03:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "exercise_soreness",
+      "details": "Unusual muscle soreness after a workout"
+    }
+  },
+  {
+    "id": "event-ae494f62",
+    "start_ts": "2025-08-16T21:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "symptom_check",
+      "details": "Minor symptom check, e.g., headache or fatigue"
+    }
+  },
+  {
+    "id": "event-fef8648e",
+    "start_ts": "2025-08-17T01:00:00",
+    "event_type": "member_message",
+    "initiator": "member",
+    "metadata": {
+      "topic": "curiosity_longevity",
+      "details": "A general question about a health or longevity topic"
+    }
+  },
+  {
+    "id": "event-6935afba",
     "start_ts": "2025-08-17T04:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "nutrition"
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
     }
   },
   {
-    "id": "event-641cc2c1",
-    "start_ts": "2025-08-19T16:00:00",
+    "id": "event-292e1327",
+    "start_ts": "2025-08-17T05:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "symptom"
+      "topic": "nutrition_question",
+      "details": "Question about a specific food or diet plan"
     }
   },
   {
-    "id": "event-080026d8",
-    "start_ts": "2025-08-24T03:00:00",
-    "event_type": "member_message",
-    "initiator": "member",
-    "metadata": {
-      "topic": "symptom"
-    }
-  },
-  {
-    "id": "event-873bb6e8",
-    "start_ts": "2025-08-25T20:00:00",
-    "event_type": "member_message",
-    "initiator": "member",
-    "metadata": {
-      "topic": "nutrition"
-    }
-  },
-  {
-    "id": "event-66268d13",
-    "start_ts": "2025-08-28T18:00:00",
+    "id": "event-bdc21f67",
+    "start_ts": "2025-08-21T18:00:00",
     "event_type": "exercise_update",
-    "initiator": "ruby",
+    "initiator": "elyx_team",
     "metadata": {
-      "details": "biweekly exercise plan update"
+      "details": "Biweekly exercise plan update"
     }
   },
   {
-    "id": "event-111afe7b",
-    "start_ts": "2025-08-29T00:00:00",
+    "id": "event-77832e58",
+    "start_ts": "2025-08-21T20:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "travel logistics"
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
     }
   },
   {
-    "id": "event-1178f7da",
-    "start_ts": "2025-08-30T16:00:00",
+    "id": "event-0700d4f1",
+    "start_ts": "2025-08-23T03:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "exercise"
+      "topic": "poor_sleep_score",
+      "details": "Concern about a low sleep score"
     }
   },
   {
-    "id": "event-006ecf19",
-    "start_ts": "2025-09-02T16:00:00",
+    "id": "event-1bd577cf",
+    "start_ts": "2025-08-25T05:00:00",
     "event_type": "member_message",
     "initiator": "member",
     "metadata": {
-      "topic": "nutrition"
-    }
-  },
-  {
-    "id": "event-5ecfc91d",
-    "start_ts": "2025-09-03T04:00:00",
-    "event_type": "member_message",
-    "initiator": "member",
-    "metadata": {
-      "topic": "symptom"
+      "topic": "garmin_hrv_low",
+      "details": "Low HRV reading on Garmin watch"
     }
   }
 ]
