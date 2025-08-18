@@ -13,13 +13,15 @@
         .btn-primary:hover { background-color: #4338ca; }
         .btn-primary:disabled { background-color: #a5b4fc; cursor: not-allowed; }
         select { border-radius: 0.375rem; border: 1px solid #d1d5db; padding: 0.5rem 0.75rem; width: 100%; background-color: #f9fafb; }
-        .message-bubble { padding: 0.75rem 1rem; border-radius: 1rem; max-width: 85%; word-wrap: break-word; }
+        .message-bubble { padding: 0.75rem 1rem; border-radius: 1rem; max-width: 85%; word-wrap: break-word; margin-bottom: 0.5rem; }
         .from-elyx { background-color: #eef2ff; color: #1e1b4b; border-bottom-left-radius: 0.25rem; align-self: flex-start; }
         .from-member { background-color: #f0fdf4; color: #14532d; border-bottom-right-radius: 0.25rem; align-self: flex-end; }
         .week-header { font-size: 1.25rem; font-weight: 600; color: #4338ca; margin-top: 1.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #e0e7ff; }
         .event-tag { display: inline-block; background-color: #e0e7ff; color: #3730a3; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 500; margin-left: 0.5rem; }
         .loader { border: 4px solid #f3f3f3; border-top: 4px solid #4f46e5; border-radius: 50%; width: 24px; height: 24px; animation: spin 1s linear infinite; }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .debug-info { background-color: #f3f4f6; padding: 0.5rem; margin: 0.25rem 0; border-radius: 0.25rem; font-size: 0.75rem; color: #6b7280; }
+        .error-message { background-color: #fee2e2; color: #dc2626; padding: 1rem; border-radius: 0.5rem; margin: 1rem 0; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -53,6 +55,12 @@
                         </button>
                     </div>
                 </form>
+                
+                <!-- Debug Panel -->
+                <div class="mt-6 p-4 bg-gray-100 rounded-lg">
+                    <h3 class="font-semibold text-sm mb-2">Debug Info:</h3>
+                    <div id="debugInfo" class="text-xs text-gray-600"></div>
+                </div>
             </div>
 
             <!-- Output Panel -->
@@ -70,7 +78,9 @@
 
     <script>
         // --- Configuration & Personas ---
-        const SIMULATION_WEEKS = 35;
+        const SIMULATION_WEEKS = 8; // Increased from 10 for better testing
+        const API_BASE_URL = 'http://127.0.0.1:8000';
+        
         const ELYX_PERSONAS = {
             "Ruby": "You are Ruby, the Elyx Concierge. Role: logistics, scheduling, reminders. Voice: empathetic, organized, proactive.",
             "Dr. Warren": "You are Dr. Warren, the Medical Strategist. Role: interpret labs, set medical direction. Voice: authoritative, precise, scientific.",
@@ -81,50 +91,74 @@
         };
         const MEMBER_PERSONA = "You are Rohan, a 46-year-old driven, analytical, time-constrained FinTech executive. You value efficiency and evidence-based approaches.";
 
+        // Debug logging function
+        function debugLog(message) {
+            console.log(message);
+            const debugInfo = document.getElementById('debugInfo');
+            debugInfo.innerHTML += `<div>${new Date().toLocaleTimeString()}: ${message}</div>`;
+            debugInfo.scrollTop = debugInfo.scrollHeight;
+        }
+
         // --- API Call to Backend Server ---
         async function generateConversationTurn(role, prompt, history) {
-            // *** THIS IS THE KEY CHANGE ***
-            const apiUrl = 'http://127.0.0.1:8000/generate'; // Points to your local FastAPI backend
+            const apiUrl = `${API_BASE_URL}/generate`;
             
-            const persona = role === 'Rohan' ? MEMBER_PERSONA : ELYX_PERSONAS[role];
-
             const payload = {
                 role: role,
                 prompt: prompt,
-                history: history,
-                persona: persona
+                history: history
             };
 
+            debugLog(`Making API call for ${role}: ${prompt.substring(0, 50)}...`);
+            
             try {
                 const response = await fetch(apiUrl, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(payload)
                 });
+                
+                debugLog(`Response status: ${response.status}`);
+                
                 if (!response.ok) {
-                    console.error("Backend Error:", await response.text());
-                    return `[Backend Error: ${response.statusText}]`;
+                    const errorText = await response.text();
+                    debugLog(`Backend Error: ${errorText}`);
+                    return `[Backend Error: ${response.status}]`;
                 }
+                
                 const data = await response.json();
-                return data.text;
+                debugLog(`Response received: ${JSON.stringify(data)}`);
+                
+                // Try to get text from multiple possible fields
+                const responseText = data.text || data.response || data.message || "[No response text found]";
+                debugLog(`Extracted text: ${responseText}`);
+                
+                return responseText;
+                
             } catch (error) {
-                console.error("Fetch Error:", error);
-                // Add a user-friendly error message to the UI
-                const timelineContainer = document.getElementById('timeline-container');
-                const errorEl = document.createElement('div');
-                errorEl.className = 'p-4 bg-red-100 text-red-800 rounded-lg my-4';
-                errorEl.innerHTML = '<strong>Connection Error:</strong> Could not connect to the backend server. Please ensure the Python server (`main.py`) is running.';
-                timelineContainer.prepend(errorEl);
+                debugLog(`Fetch Error: ${error.message}`);
+                showError(`Connection Error: Could not connect to the backend server at ${apiUrl}. Please ensure the Python server is running.`);
                 return "[Connection Error]";
             }
         }
 
         // --- UI Rendering ---
         const timelineContainer = document.getElementById('timeline-container');
+        
+        function showError(message) {
+            const errorEl = document.createElement('div');
+            errorEl.className = 'error-message';
+            errorEl.innerHTML = `<strong>Error:</strong> ${message}`;
+            timelineContainer.prepend(errorEl);
+        }
+        
         function renderMessage(msg) {
             const messageEl = document.createElement('div');
             messageEl.className = `message-bubble ${msg.from === 'Rohan' ? 'from-member' : 'from-elyx'}`;
-            messageEl.innerHTML = `<p class="font-bold text-sm">${msg.from}</p><p>${msg.text}</p>`;
+            messageEl.innerHTML = `
+                <p class="font-bold text-sm">${msg.from}</p>
+                <p>${msg.text}</p>
+            `;
             timelineContainer.appendChild(messageEl);
             timelineContainer.scrollTop = timelineContainer.scrollHeight;
         }
@@ -136,14 +170,38 @@
             timelineContainer.appendChild(headerEl);
         }
 
+        // Test connection function
+        async function testConnection() {
+            try {
+                debugLog('Testing backend connection...');
+                const response = await fetch(`${API_BASE_URL}/`);
+                const data = await response.json();
+                debugLog(`Connection test: ${JSON.stringify(data)}`);
+                return true;
+            } catch (error) {
+                debugLog(`Connection test failed: ${error.message}`);
+                return false;
+            }
+        }
+
         // --- Simulation Engine ---
         document.getElementById('resultsForm').addEventListener('submit', async function(event) {
             event.preventDefault();
+            
+            // Clear previous results and debug info
+            timelineContainer.innerHTML = '';
+            document.getElementById('debugInfo').innerHTML = '';
+            
+            // Test connection first
+            const connectionOk = await testConnection();
+            if (!connectionOk) {
+                showError('Cannot connect to backend server. Please check if it\'s running on http://127.0.0.1:8000');
+                return;
+            }
+            
             const generateBtn = document.getElementById('generateJourneyBtn');
             generateBtn.disabled = true;
             generateBtn.innerHTML = `<div class="loader mr-2"></div> Generating...`;
-            
-            timelineContainer.innerHTML = ''; // Clear previous results
 
             const initialResults = {
                 apoE4: document.getElementById('apoE4').value,
@@ -163,62 +221,79 @@
             if (parseInt(initialResults.calciumScore.split('-')[0]) >= 100) journeyState.knownIssues.push("High Calcium Score");
             if (initialResults.apoE4.includes('copy')) journeyState.knownIssues.push("ApoE4 Carrier");
 
-            for (let week = 1; week <= SIMULATION_WEEKS; week++) {
-                journeyState.currentWeek = week;
-                let eventPrompt = null;
-                let participants = [];
-                let eventDescription = "";
+            debugLog(`Starting simulation with issues: ${journeyState.knownIssues.join(', ')}`);
 
-                // --- Event Trigger Logic ---
-                if (week === 1) {
-                    eventDescription = "Onboarding";
-                    eventPrompt = "Start the conversation as Rohan. You're sending your first message to Elyx, mentioning your concern about your family history of heart disease and that you feel your current health management is random.";
-                    participants = ["Rohan", "Ruby"];
-                } else if (week === 2 && journeyState.knownIssues.length > 0) {
-                    eventDescription = "Initial Triage";
-                    eventPrompt = `As Dr. Warren, address the key findings from the initial tests: ${journeyState.knownIssues.join(', ')}. Explain the next immediate step for the highest priority issue.`;
-                    participants = ["Dr. Warren", "Rohan"];
-                } else if (week > 8 && week % 4 === 0) {
-                    eventDescription = "Travel Planning";
-                    journeyState.isTraveling = true;
-                    eventPrompt = "As Rohan, mention you have a last-minute business trip to London and ask for tips on managing jet lag and nutrition.";
-                    participants = ["Rohan", "Advik"];
-                } else if (week > 8 && week % 2 === 0 && Math.random() < 0.5) {
-                     eventDescription = "Member Query";
-                     eventPrompt = "As Rohan, ask a question about your Garmin/Whoop data. For example, 'My HRV was low this morning, but I feel fine. Why?'";
-                     participants = ["Rohan", "Advik"];
-                } else {
-                    if (Math.random() > 0.6) {
-                        eventDescription = "Weekly Check-in";
-                        eventPrompt = "As Ruby, send a brief, proactive check-in message to Rohan. Ask if he needs any logistical support for the week ahead.";
-                        participants = ["Ruby", "Rohan"];
-                    }
+            // Call the backend /start_simulation endpoint instead of manual event generation
+            try {
+                debugLog('Calling backend /start_simulation endpoint...');
+                const simulationResponse = await fetch(`${API_BASE_URL}/start_simulation`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        months: Math.ceil(SIMULATION_WEEKS / 4.345), // Convert weeks to months
+                        known_issues: initialResults
+                    })
+                });
+
+                if (!simulationResponse.ok) {
+                    const errorText = await simulationResponse.text();
+                    debugLog(`Simulation Error: ${errorText}`);
+                    showError('Failed to generate simulation from backend');
+                    generateBtn.disabled = false;
+                    generateBtn.innerText = "Generate Full Journey";
+                    return;
                 }
 
-                if (eventPrompt) {
-                    renderWeekHeader(week, eventDescription);
-                    let currentHistory = journeyState.history.slice(-4);
+                const simulationData = await simulationResponse.json();
+                debugLog(`Received ${simulationData.length} events from backend`);
 
-                    for (const role of participants) {
-                        const task = participants.indexOf(role) === 0 ? eventPrompt : `Based on the last message, write a concise and in-character response as ${role}.`;
-                        const responseText = await generateConversationTurn(role, task, currentHistory);
-                        if(responseText === "[Connection Error]") {
-                            generateBtn.disabled = false;
-                            generateBtn.innerText = "Generate Full Journey";
-                            return; // Stop the simulation if backend is not running
-                        }
-                        const newMsg = { from: role, text: responseText };
-                        renderMessage(newMsg);
-                        currentHistory.push(newMsg);
-                        journeyState.history.push(newMsg);
-                        await new Promise(resolve => setTimeout(resolve, 200));
+                // Group events by week for display
+                let currentWeek = 1;
+                let eventsInCurrentWeek = 0;
+                const maxEventsPerWeekDisplay = 8; // Limit display to prevent overwhelming UI
+
+                for (let i = 0; i < simulationData.length && currentWeek <= SIMULATION_WEEKS; i++) {
+                    const eventData = simulationData[i];
+                    const event = eventData.event;
+                    const conversation = eventData.conversation;
+
+                    // Determine if we should start a new week
+                    if (eventsInCurrentWeek >= maxEventsPerWeekDisplay) {
+                        currentWeek++;
+                        eventsInCurrentWeek = 0;
+                        await new Promise(resolve => setTimeout(resolve, 200)); // Brief pause between weeks
                     }
+
+                    if (currentWeek > SIMULATION_WEEKS) break;
+
+                    // Display week header for first event of the week
+                    if (eventsInCurrentWeek === 0) {
+                        const eventTypeDisplay = event.event_type.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                        renderWeekHeader(currentWeek, eventTypeDisplay);
+                    }
+
+                    // Display the conversation
+                    for (const message of conversation) {
+                        renderMessage(message);
+                        await new Promise(resolve => setTimeout(resolve, 300)); // Delay between messages
+                    }
+
+                    eventsInCurrentWeek++;
+                    journeyState.history.push(...conversation);
                 }
+
+            } catch (error) {
+                debugLog(`Simulation Error: ${error.message}`);
+                showError('Failed to generate simulation. Please check if the backend server is running.');
             }
 
             generateBtn.disabled = false;
             generateBtn.innerText = "Generate Full Journey";
+            debugLog('Simulation completed!');
         });
+        
+        // Initialize with connection test
+        window.addEventListener('load', testConnection);
     </script>
 </body>
 </html>

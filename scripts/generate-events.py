@@ -13,7 +13,7 @@ DATA_DIR.parent.mkdir(exist_ok=True, parents=True)
 SEED = 42
 np.random.seed(SEED)
 
-DEFAULT_MONTHS = 8
+DEFAULT_MONTHS = 1
 MIN_EVENTS_PER_WEEK = 4
 MAX_EVENTS_PER_WEEK = 7
 
@@ -104,7 +104,7 @@ def generate_timeline(signup_date: datetime, months=DEFAULT_MONTHS):
 
 if __name__ == "__main__":
     signup = datetime.fromisoformat("2025-01-01T09:00:00")
-    events = generate_timeline(signup, months=8)
+    events = generate_timeline(signup, months=1)
     with open(DATA_DIR, "w") as f:
         json.dump(events, f, indent=2)
     print(f"Generated {len(events)} events -> {DATA_DIR}")
