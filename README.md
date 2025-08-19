@@ -15,6 +15,7 @@ Member-initiated and Elyx-initiated chats.
 Plan updates, travel adaptations, diagnostic panels, and weekly summaries.
 Role-specific tones for each Elyx team member.
 
+
 📊 Journey timeline visualization (React + Tailwind + Recharts)
 Event timeline with plan updates, reports, and interventions.
 Click an event → see decision + reasoning + linked chat messages.
@@ -29,11 +30,17 @@ Member’s goals, travel frequency, adherence level, and upcoming tests.
 
 HOW TO RUN THE CODE
 Step 1: Clone the repo to your local machine.
+
 Step 2: Change the path to the Python environment and import the given modules in the environment.
 Run the command: pip install fastapi uvicorn google-generativeai python-dotenv
+
 Step 3: Run the command: $env: GEMINI_API_KEY="your_api_key_here"  (You need to keep your Gemini API key handy)
+
 Step 4: Change the directory of the env to the scripts folder. (cd scripts)
+
 Step 5: Run the command: uvicorn main: app --reload 
+
 Step 6: Run the index.html script in your local env.
+
 Step 7: On the webpage, run the conversation, and it will start generating the conversation.
 
